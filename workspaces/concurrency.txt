@@ -1,0 +1,23 @@
+Concurrency, by definition, is the ability to break down a computer program or algorithm into individual parts, which can be executed independently.
+Concurrency vs Parallelism
+- Concurrency is the task of running and managing multiple computations at the same time
+- Parallelism is the task of running multiple computations simultaneously.
+"Concurrency is about dealing with a lot of things at once. Parallelism is about doing lots of things at once."
+
+
+Go relies on a concurrency model called Communicating Sequential Processes (CSP)
+CSP allows us to give a better structure to our concurrent code and provides a model for thinking about concurrency in a way that makes it a little easier
+
+Basic concepts
+- Data race: occurs when processes have to access the same variable concurrently
+- Race condition: occurs when the timing or order of events affects the correctness of a piece of code
+- Deadlock: occurs when all processes are blocking while waiting for each other
+	- 4 conditions (Coffman conditions) that must be satisfied for a deadlock to occur
+		1. Mutual Exclusion: a concurrent process holds at least one resource at any one time making it non-shareable
+		2. Hold and wait: a concurrent process holds a resource and is waiting for another resource
+		3. No preemption: a resource helped by a concurrent prcoess cannot be taken away by the system, it can only be freed by the process holding it
+		4. Circular wait: a process is waiting for the resource helped by the second process, which is waiting for the resource held by the third, and so on
+
+
+Starvation happens when a process is deprived of necessary resources and is unable to complete its functions
+Need to employ better resource-allotment algorithms that make sure every process gets its fair share of resources

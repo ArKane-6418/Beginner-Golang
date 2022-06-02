@@ -1,0 +1,7 @@
+A package is nothing but a directory containing one or more Go source files, or other Go packages.
+
+This means every Go source file must belong to a package and package declaration is done at top of every source file as follows: package <package_name>
+
+So far we've done everything inside of package main. By convention, executable programs (by that I mean the ones with the main package) are called Commands, others are simply called Packages
+
+So far we've done everything inside of package main. By convention, executable programs (by that I mean the ones with the main package) are called Commands, others are simply called Packages

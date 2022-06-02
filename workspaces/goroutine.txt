@@ -1,0 +1,4 @@
+A goroutine is a lightweight thread of execution that is managed by the Go runtime and essentially lets us write asynchronous code in a synchronous manner
+A single OS thread may run thousands of goroutines in them using the GO runtime scheduler which uses cooperative scheduling
+    - implies that if the current goroutine is blocked or completed, the scheduler will move to other goroutines on another OS thread
+We can turn any function into a goroutine using the go keyword when calling a function: go fn(x, y, z)

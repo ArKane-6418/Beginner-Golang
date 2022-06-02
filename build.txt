@@ -1,0 +1,2 @@
+Building static binaries is one of the best features of Go which enables us to ship our code efficiently
+Use the "go build" command

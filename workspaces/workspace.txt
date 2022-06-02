@@ -1,0 +1,3 @@
+Workspaces allow us to work with multiple modules simultaneously without having to edit go.mod files for each module. Each module within a workspace is treated as a root module when resolving dependencies.
+"go work init" creates the workspace (the go.work file)
+"go work use ./hello" will add the created hello module to the workspace

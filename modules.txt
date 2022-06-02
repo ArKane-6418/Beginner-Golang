@@ -1,0 +1,12 @@
+A module is a collection of Go packages stored in a file tree with a go.mod file at its root, provided the directory is outside $GOPATH/src
+GOPATH is a variable that defines the root of your workspace and it contains the following folders:
+
+src: contains Go source code organized in a hierarchy
+pkg: contains compiled package code
+bin: contains compiled binaries and executables.
+
+Use "go install" to add a new dependency
+Use "go list -m all" to list all dependencies
+Use "go mod tidy" to remove unused dependencies
+
+Vendoring is the act of making your own copy of the 3rd party packages your project is using. Those copies are traditionally placed inside each project and then saved in the project repository.
